@@ -1,5 +1,4 @@
 import axios from "axios";
-import { get } from "http";
 
 const makeApi = () => {
   return axios.create({
