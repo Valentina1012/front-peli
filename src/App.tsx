@@ -21,7 +21,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <ActualizacionProvider>
           <CssBaseLine />
-          <BrowserRouter>
+          <BrowserRouter basename="/unahur-front">
             <Header />
             <Container
               sx={(theme) => ({

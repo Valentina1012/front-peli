@@ -12,7 +12,7 @@ RUN npm run build
 
 FROM nginx:alpine AS production
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=image-node /app/dist /usr/share/nginx/html
+COPY --from=image-node /app/dist /usr/share/nginx/html/unahur-front/
 
 EXPOSE 80
 
